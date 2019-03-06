@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Code me, Disney</h2>
+        <h2>Step up to bat!</h2>
         <Display strikes={this.state.strikes} balls={this.state.balls} />
         <Dashboard
           strikeButton={this.strikeButton}
