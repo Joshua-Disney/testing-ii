@@ -1,16 +1,19 @@
 import React from "react";
 
-class Display extends React.Component {
-  state = {
-    strikes: 0,
-    balls: 0
-  };
+import "../App.css";
 
+class Display extends React.Component {
   render() {
     return (
-      <div>
-        <h3>strikes</h3>
-        <h3>balls</h3>
+      <div className="displayContainer">
+        <div className="strikes">
+          <h3>strikes</h3>
+          {this.props.strikes}
+        </div>
+        <div className="balls">
+          <h3>balls</h3>
+          {this.props.balls}
+        </div>
       </div>
     );
   }
